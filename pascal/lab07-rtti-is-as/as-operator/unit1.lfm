@@ -1,0 +1,54 @@
+object Form1: TForm1
+  Left = 400
+  Height = 240
+  Top = 250
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '3.0.0.3'
+  object Button1: TButton
+    Left = 48
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Кнопка 1'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 192
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Кнопка 2'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 88
+    Height = 23
+    Top = 72
+    Width = 136
+    OnChange = Edit1Change
+    TabOrder = 2
+    Text = ''
+  end
+  object Edit2: TEdit
+    Left = 88
+    Height = 23
+    Top = 112
+    Width = 136
+    OnChange = Edit1Change
+    TabOrder = 3
+    Text = ''
+  end
+  object Edit3: TEdit
+    Left = 88
+    Height = 23
+    Top = 152
+    Width = 136
+    TabOrder = 4
+    Text = ''
+  end
+end

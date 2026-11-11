@@ -1,0 +1,12 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Lab 7.1 — Оператор is (Фрукти)'
+  ClientHeight = 300
+  ClientWidth = 420
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'default'
+  OnCreate = FormCreate
+end

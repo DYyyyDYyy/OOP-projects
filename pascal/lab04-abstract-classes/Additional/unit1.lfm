@@ -1,0 +1,156 @@
+object Form1: TForm1
+  Left = 335
+  Height = 527
+  Top = 59
+  Width = 656
+  Caption = 'Вибір ігрового персонажа'
+  ClientHeight = 527
+  ClientWidth = 656
+  LCLVersion = '4.2.0.0'
+  OnCreate = FormCreate
+  object Memo1: TMemo
+    Left = 16
+    Height = 336
+    Top = 16
+    Width = 624
+    Lines.Strings = (
+      'Історія дій:'
+    )
+    TabOrder = 0
+  end
+  object GroupBoxWarrior: TGroupBox
+    Left = 16
+    Height = 150
+    Top = 362
+    Width = 192
+    Caption = 'Блок Воїна'
+    ClientHeight = 134
+    ClientWidth = 188
+    TabOrder = 1
+    object lblWarriorName: TLabel
+      Left = 16
+      Height = 14
+      Top = 8
+      Width = 30
+      Caption = 'Воїн'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lblWarriorHP: TLabel
+      Left = 16
+      Height = 14
+      Top = 40
+      Width = 58
+      Caption = 'Життя: ...'
+      ParentColor = False
+    end
+    object lblWarriorAtk: TLabel
+      Left = 16
+      Height = 14
+      Top = 72
+      Width = 54
+      Caption = 'Атака: ...'
+      ParentColor = False
+    end
+    object btnSelectWarrior: TButton
+      Left = 16
+      Height = 25
+      Top = 100
+      Width = 160
+      Caption = 'Вибрати'
+      TabOrder = 0
+      OnClick = btnSelectWarriorClick
+    end
+  end
+  object GroupBoxMage: TGroupBox
+    Left = 208
+    Height = 150
+    Top = 360
+    Width = 210
+    Caption = 'Блок Мага'
+    ClientHeight = 134
+    ClientWidth = 206
+    TabOrder = 2
+    object lblMageName: TLabel
+      Left = 16
+      Height = 14
+      Top = 8
+      Width = 24
+      Caption = 'Маг'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lblMageHP: TLabel
+      Left = 16
+      Height = 14
+      Top = 40
+      Width = 58
+      Caption = 'Життя: ...'
+      ParentColor = False
+    end
+    object lblMageAtk: TLabel
+      Left = 16
+      Height = 14
+      Top = 72
+      Width = 54
+      Caption = 'Атака: ...'
+      ParentColor = False
+    end
+    object btnSelectMage: TButton
+      Left = 16
+      Height = 25
+      Top = 100
+      Width = 168
+      Caption = 'Вибрати'
+      TabOrder = 0
+      OnClick = btnSelectMageClick
+    end
+  end
+  object GroupBoxArcher: TGroupBox
+    Left = 424
+    Height = 150
+    Top = 360
+    Width = 216
+    Caption = 'Блок Лучника'
+    ClientHeight = 134
+    ClientWidth = 212
+    TabOrder = 3
+    object lblArcherName: TLabel
+      Left = 16
+      Height = 14
+      Top = 8
+      Width = 48
+      Caption = 'Лучник'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lblArcherHP: TLabel
+      Left = 16
+      Height = 14
+      Top = 40
+      Width = 58
+      Caption = 'Життя: ...'
+      ParentColor = False
+    end
+    object lblArcherAtk: TLabel
+      Left = 16
+      Height = 14
+      Top = 72
+      Width = 54
+      Caption = 'Атака: ...'
+      ParentColor = False
+    end
+    object btnSelectArcher: TButton
+      Left = 16
+      Height = 25
+      Top = 100
+      Width = 178
+      Caption = 'Вибрати'
+      TabOrder = 0
+      OnClick = btnSelectArcherClick
+    end
+  end
+end

@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  cpp:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - run: ./build.sh
+
+  # Console Pascal programs compile with Free Pascal; the LCL (GUI) ones need Lazarus.
+  pascal:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq lazarus-ide lcl-gtk2 lcl-units >/dev/null
+      - name: build every Lazarus project with lazbuild
+        run: |
+          fail=0
+          for lpi in $(find pascal -name '*.lpi' | sort); do
+            if lazbuild -q "$lpi" >/dev/null 2>build.log; then echo "ok    $lpi"; else echo "FAIL  $lpi"; tail -5 build.log; fail=1; fi
+          done
+          exit $fail

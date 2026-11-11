@@ -1,0 +1,60 @@
+object Form1: TForm1
+  Left = 697
+  Height = 240
+  Top = 391
+  Width = 320
+  Caption = 'Налаштування персонажа'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '4.2.0.0'
+  object lblClass: TLabel
+    Left = 24
+    Height = 14
+    Top = 16
+    Width = 95
+    Caption = 'Клас не обрано'
+  end
+  object btnWarrior: TButton
+    Left = 24
+    Height = 25
+    Top = 48
+    Width = 75
+    Caption = 'Воїн'
+    TabOrder = 0
+    OnClick = ClassButtonClick
+  end
+  object btnMage: TButton
+    Left = 112
+    Height = 25
+    Top = 48
+    Width = 75
+    Caption = 'Маг'
+    TabOrder = 1
+    OnClick = ClassButtonClick
+  end
+  object btnArcher: TButton
+    Left = 200
+    Height = 25
+    Top = 48
+    Width = 75
+    Caption = 'Лучник'
+    TabOrder = 2
+    OnClick = ClassButtonClick
+  end
+  object edtHealth: TEdit
+    Left = 24
+    Height = 22
+    Top = 104
+    Width = 120
+    TabOrder = 3
+    OnChange = StatEditChange
+  end
+  object edtMana: TEdit
+    Left = 24
+    Height = 22
+    Top = 144
+    Width = 120
+    TabOrder = 4
+    OnChange = StatEditChange
+  end
+end
